@@ -4,7 +4,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 
-
+#define ADDRESS "0.0.0.0"
 #define PORT 1200
 
 using namespace std;
@@ -31,11 +31,22 @@ int main(){
         cout << "erro ao esperar comunicação...";
         return -1;
     }
-    std::cout << "Conexão iniciada em: " << PORT << endl;
-    std::cout << "Aguardando conexao..." << endl;
+    cout << "Conexão iniciada em: " << PORT << endl;
+    cout << "Aguardando conexao..." << endl;
 
     while(true){
-        
+        new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
+        if(new_socket < 0) {
+            cout << "Erro ao aceitar conexão" << endl;
+            continue;
+        }
+        cout << "Nova conexão estabelecida!" << endl;
+        int valread = read(new_socket, buffer, 1024);
+        cout << "Mensagem recebida: " << buffer << endl;
+        string resposta = "Mensagem recebida com sucesso!";
+        send(new_socket, resposta.c_str(), resposta.length(), 0);
+        memset(buffer, 0, sizeof(buffer));
+        close(new_socket);
     }
 
     return 0;
