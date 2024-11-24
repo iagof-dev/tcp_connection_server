@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|e:\\projetos\\repositorios\\tcp_connection_server\\client\\tcpclient\\helpers\\tcpclientcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|solutionrelative:helpers\\tcpclientcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|e:\\projetos\\repositorios\\tcp_connection_server\\client\\tcpclient\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|e:\\projetos\\repositorios\\tcp_connection_server\\client\\tcpclient\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|e:\\projetos\\repositorios\\tcp_connection_server\\client\\tcpclient\\models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|solutionrelative:models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|e:\\projetos\\repositorios\\tcp_connection_server\\client\\tcpclient\\events\\tcpevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC57051-AA92-40E3-BA23-685650B6CB7F}|tcpclient.csproj|solutionrelative:events\\tcpevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "tcpevents.cs",
+              "DocumentMoniker": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\events\\tcpevents.cs",
+              "RelativeDocumentMoniker": "events\\tcpevents.cs",
+              "ToolTip": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\events\\tcpevents.cs",
+              "RelativeToolTip": "events\\tcpevents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:41:09.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server.cs",
+              "DocumentMoniker": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\models\\server.cs",
+              "RelativeDocumentMoniker": "models\\server.cs",
+              "ToolTip": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\models\\server.cs",
+              "RelativeToolTip": "models\\server.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:39:16.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tcpclientcon.cs",
+              "DocumentMoniker": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\helpers\\tcpclientcon.cs",
+              "RelativeDocumentMoniker": "helpers\\tcpclientcon.cs",
+              "ToolTip": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\helpers\\tcpclientcon.cs",
+              "RelativeToolTip": "helpers\\tcpclientcon.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwBsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:38:19.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:34:33.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Projetos\\Repositorios\\tcp_connection_server\\client\\tcpclient\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:33:33.552Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
