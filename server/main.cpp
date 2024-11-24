@@ -35,16 +35,21 @@ int main(){
     cout << "Aguardando conexao..." << endl;
 
     while(true){
-        new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
-        if(new_socket < 0) {
-            cout << "Erro ao aceitar conexão" << endl;
+        new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen);
+        if (new_socket < 0) {
+            cerr << "Erro ao aceitar conexão: " << strerror(errno) << endl;
             continue;
         }
         cout << "Nova conexão estabelecida!" << endl;
-        int valread = read(new_socket, buffer, 1024);
-        cout << "Mensagem recebida: " << buffer << endl;
-        string resposta = "Mensagem recebida com sucesso!";
-        send(new_socket, resposta.c_str(), resposta.length(), 0);
+        int valread = read(new_socket, buffer, sizeof(buffer) - 1);
+        if (valread > 0) {
+            buffer[valread] = '\0'; // Garantir que o buffer seja uma string válida
+            cout << "Mensagem recebida: " << buffer << endl;
+            string resposta = "Mensagem recebida com sucesso!";
+            send(new_socket, resposta.c_str(), resposta.length(), 0);
+        } else {
+            cerr << "Erro ao ler mensagem: " << strerror(errno) << endl;
+        }
         memset(buffer, 0, sizeof(buffer));
         close(new_socket);
     }

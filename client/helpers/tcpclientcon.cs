@@ -18,6 +18,7 @@ namespace tcpclient.helpers
         public tcpclientcon(String address, int port)
         {
             client = new SimpleTcpClient(address + ":" + port.ToString());
+            client.Keepalive.EnableTcpKeepAlives = true;
             client.Events.Connected += events.Connected;
             client.Events.Disconnected += events.Disconnected;
             client.Events.DataReceived += events.DataReceived;
@@ -38,9 +39,19 @@ namespace tcpclient.helpers
         {
             client.Disconnect();
         }
-        public void SendMessage(String message)
+        public void SendMessage(String message, Button btn)
         {
-            client.Send(message);
+            btn.Enabled = false;
+            try {
+                client.Connect();
+                client.Send(message);
+                btn.Enabled = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Erro!");
+            }
+            btn.Enabled = true;
         }
     }
 }

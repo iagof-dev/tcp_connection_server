@@ -18,7 +18,7 @@ namespace tcpclient
         public Form1()
         {
             InitializeComponent();
-            con = new tcpclientcon("192.168.0.104", 1200);
+            con = new tcpclientcon("alt.marciossupiais.shop", 1200);
         }
 
         private void conectarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -37,6 +37,11 @@ namespace tcpclient
         private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Desconectando");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.SendMessage(textBox1.Text, button1);
         }
     }
 }
