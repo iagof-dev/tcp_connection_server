@@ -9,9 +9,10 @@ using tcpclient.events;
 
 namespace tcpclient.helpers
 {
-
     public class tcpclientcon
     {
+
+        public bool isConnected = false;
         SimpleTcpClient client;
         events.tcpevents events = new events.tcpevents();
 
@@ -29,29 +30,35 @@ namespace tcpclient.helpers
             try
             {
                 client.Connect();
+                isConnected = true;
             }
             catch (Exception e)
             {
+                isConnected = false;
                 MessageBox.Show(e.Message,"Erro!");
             }
         }
         public void Disconnect()
         {
             client.Disconnect();
+            isConnected = false;
         }
-        public void SendMessage(String message, Button btn)
+        public bool SendMessage(String message, Button btn, TextBox txtbox)
         {
             btn.Enabled = false;
+            txtbox.Enabled = false;
             try {
-                client.Connect();
                 client.Send(message);
-                btn.Enabled = true;
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message, "Erro!");
+                return false;
+
             }
             btn.Enabled = true;
+            txtbox.Enabled = true;
+            return true;
         }
     }
 }

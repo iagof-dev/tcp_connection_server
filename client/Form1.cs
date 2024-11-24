@@ -14,7 +14,7 @@ namespace tcpclient
 {
     public partial class Form1 : Form
     {
-        tcpclientcon con;
+        public static tcpclientcon con;
         public Form1()
         {
             InitializeComponent();
@@ -37,11 +37,26 @@ namespace tcpclient
         private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Desconectando");
+            con.Disconnect();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con.SendMessage(textBox1.Text, button1);
+            if (textBox1.Text == null || textBox1.Text == "" || textBox1.Text == " ") return;
+
+            if (con.SendMessage(textBox1.Text, button1, textBox1)) textBox1.Clear();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Conectado: False";
+        }
+
+        private void conupdate_Tick(object sender, EventArgs e)
+        {
+            label1.Text = "Conectado: " + con.isConnected;
+            button1.Enabled = con.isConnected;
         }
     }
 }

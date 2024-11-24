@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace tcpclient.events
 {
@@ -18,6 +19,7 @@ namespace tcpclient.events
         public void Disconnected(object sender, ConnectionEventArgs e)
         {
             Debug.WriteLine($"*** Server {e.IpPort} disconnected");
+            Form1.con.isConnected = false;
         }
 
         public void DataReceived(object sender, SuperSimpleTcp.DataReceivedEventArgs e)
