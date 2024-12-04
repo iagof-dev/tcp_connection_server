@@ -18,7 +18,7 @@ namespace tcpclient
         public Form1()
         {
             InitializeComponent();
-            con = new tcpclientcon("alt.marciossupiais.shop", 1200);
+            con = new tcpclientcon("0.0.0.0", 1200);
         }
 
         private void conectarToolStripMenuItem1_Click(object sender, EventArgs e)
